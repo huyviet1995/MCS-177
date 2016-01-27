@@ -1,0 +1,67 @@
+MCS-177 Project 2: Loops, Patterns and Summation, Oh My! (Spring 2015)
+
+********************************************************************************************************************************
+Task 1, copy and paste the for loops you wrote and the results printed underneath the corresponding question number:  
+********************************************************************************************************************************
+
+Question 1:
+--------------------------------------------------------
+for i in range(2):
+    print (i)
+0
+1
+
+Question 2:
+--------------------------------------------------------
+for i in range(1):
+    print (i)
+0
+
+Question 3:
+--------------------------------------------------------
+for i in range(3,7,1):
+    print (i)
+3
+4
+5
+6
+
+Question 4:
+--------------------------------------------------------
+for i in range(5,18,4):
+    print (i)
+
+5
+9
+13
+17
+
+Question 5:
+--------------------------------------------------------
+for i in range(8,2,-1):
+    print (i)
+8
+7
+6
+5
+4
+3
+
+
+
+
+********************************************************************************************************************************
+Task 2, put your write-up underneath the corresponding question number:  
+********************************************************************************************************************************
+
+Question 7:
+--------------------------------------------------------
+(on day 12)
+>>>presentsOnDay(12)
+78
+
+>>>presentsThroughDay(12)
+364
+
+The function presentsOnDay used to calculate the number of presents received on each day has two different versions: the first one uses accumulate pattern (for loop) while the second one uses only a step. With small number (<100), there is no clear difference between running speeds of the two versions. However, when large number is used, it took about 5s for my laptop to calculate the number of presents on day 10000 using the first version while it only took a fraction of a second to do the same task with the second version. The difference in running time can be explained by the number of steps the computer needs to take to return the result of the function. When loop is used, the total amount steps added up from the the loop is much greater than one step run by the second function.Therefore, using loop can slow down the speed of calculation.
+

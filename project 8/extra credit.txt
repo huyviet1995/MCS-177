@@ -1,0 +1,19 @@
+def recursiveSort(List,lo,hi):
+    
+    maxNum=List[lo];
+    for num in List[lo:hi]:
+        if (num>maxNum):
+            maxNum=num;
+            
+    if (List.index(maxNum)!=hi-1):
+        maxIndex=List.index(maxNum)
+        c=List[hi-1]
+        List[hi-1]=maxNum
+        List[maxIndex]=c
+    
+    if (hi>lo+1):
+        recursiveSort(List,lo,hi-1)
+
+def sortList(List):
+    recursiveSort(List,0,len(List));
+    return List;
